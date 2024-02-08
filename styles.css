@@ -1,0 +1,218 @@
+/* Use prefers-color-scheme to switch between light and dark themes */
+/*
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #F0F0F0;
+        color: #333333;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333333;
+        color: #F0F0F0;
+    }
+}
+*/
+
+body {
+    background-color: #FFF;
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #e5e5e5;
+    color: #000;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    height: 48px;
+    width: 48px;
+    margin: 8px;
+    border-radius: 50px;
+    pointer-events: none;
+}
+
+header h1 {
+    margin-left: 4px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.badge {
+    font-size: 10px;
+    font-weight: 500;
+    background-color: white;
+    border: 2px solid rgb(175, 175, 175);
+    padding: 4px;
+    border-radius: 8px;
+    margin-left: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.version {
+    font-size: 10px;
+    font-weight: 300;
+    color: #000;
+    margin-left: 8px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    padding: 16px;
+    width: 32%;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.3s;
+    transition-timing-function: ease;
+}
+
+#resources .card {
+    width: 49%;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666666;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+#card-discord:hover {
+    background-image: url(assets/gif-1.gif);
+}
+
+#card-spotify:hover {
+    background-image: url(assets/gif-2.gif);
+}
+
+#card-github:hover {
+    background-image: url(assets/gif-3.webp);
+}
+
+#card-hours:hover {
+    transform: none;
+    cursor: default;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 .5em;
+    width: 100%;
+}
+
+tr {
+    font-size: 16px;
+}
+
+tr td {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+}
+
+tr td:first-of-type {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+tr td:last-of-type {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+table td:first-child {
+    font-weight: bold;
+}
+
+#disclaimer {
+    font-size: 12px;
+    color: #999999;
+}
+
+#disclaimer u {
+    text-decoration: underline;
+}
+
+#disclaimer a {
+    color: #999999;
+}
+
+#disclaimer a:hover {
+    color: #666666;
+}
+
+#disclaimer p {
+    padding: 4px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EEE;
+    color: #000;
+    height: 64px;
+    padding: 8px;
+}
+
+footer p {
+    font-size: 14px;
+    padding: 8px;
+}
+
+footer svg {
+    color: #000;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+footer svg:hover {
+    color: #fff;
+}
