@@ -125,15 +125,15 @@ section h2 {
 }
 
 #card-discord:hover {
-    background-image: url(assets/gif-1.gif);
+    background-image: url(asset/gif-1.gif);
 }
 
 #card-spotify:hover {
-    background-image: url(assets/gif-2.gif);
+    background-image: url(asset/gif-2.gif);
 }
 
 #card-github:hover {
-    background-image: url(assets/gif-3.webp);
+    background-image: url(asset/gif-3.webp);
 }
 
 #card-hours:hover {
