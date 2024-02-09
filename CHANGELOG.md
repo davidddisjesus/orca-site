@@ -1,3 +1,8 @@
+## `v0.2.1`
+**`fix:`** Incorrect meta
+
+
+
 ## `v0.2.0`
 **`feat:`** Dynamic system dark/light theme
 <br>
