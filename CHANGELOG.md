@@ -1,9 +1,23 @@
-## 0.1.2
-docs: Added changelog
+## `v0.2.0`
+**`feat:`** Dynamic system dark/light theme
+<br>
+**`refactor:`** Head meta implementation
+<br>
+**`chore:`** Meet schedule update
 
-## 0.1.1
-fix: Discord link
-fix: Updated cards description
 
-## 0.1.0
-Initial commit
+
+## `v0.1.2`
+**`docs:`** Add changelog
+
+
+
+## `v0.1.1`
+**`fix:`** Change Discord link
+<br>
+**`fix:`** Update incorrect cards description
+
+
+
+## `v0.1.0`
+`Initial commit`

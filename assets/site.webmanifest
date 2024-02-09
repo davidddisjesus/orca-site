@@ -1,0 +1,12 @@
+{
+    "short_name": "ORCA Hub",
+    "name": "ORCA Hub",
+    "icons": [{
+      "src": "assets/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16 32x32 48x48 64x64 128x128 192x192 256x256",
+    }],
+    "start_url": "/?utm_source=homescreen",
+    "background_color": "#e5e5e5",
+    "theme_color": "#e5e5e5"
+  }

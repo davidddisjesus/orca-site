@@ -1,24 +1,135 @@
-/* Use prefers-color-scheme to switch between light and dark themes */
-/*
+/* color themes */
+
 @media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+    }
+    
     body {
-        background-color: #F0F0F0;
-        color: #333333;
+        background-color: #FFF;
+        color: #000;
+    }
+
+    header img {
+        content: url(assets/logo.png);
+    }
+
+    header {
+        background-color: #e5e5e5;
+        color: #000;
+    }
+
+    .badge {
+        background-color: white;
+        border: 2px solid #afafaf;
+    }
+
+    .version {
+        color: #000;
+    }
+
+    .card {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card p {
+        color: #666;
+    }
+
+    tr td {
+        background-color: #f5f5f5;
+    }
+    
+    #disclaimer {
+        color: #666;
+    }
+
+    #disclaimer a {
+        color: #666;
+    }
+
+    
+    footer svg {
+        color: #000;
+    }
+
+    footer svg:hover {
+        color: #333;
     }
 }
 
 @media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+    
     body {
-        background-color: #333333;
-        color: #F0F0F0;
+        background-color: #000;
+        color: #FFF;
+    }
+
+    header img {
+        content: url(assets/logo_black.png);
+    }
+
+    header {
+        background-color: #1a1a1a;
+        color: #FFF;
+    }
+
+    .badge {
+        background-color: #505050;
+        border: 2px solid #202020;
+    }
+
+    .version {
+        color: #FFF;
+    }
+
+    .card {
+        background-color: #151515;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 36px rgba(0,0,255,0.5);
+    }
+
+    #card-hours:hover {
+        box-shadow: none;
+    }
+
+    .card p {
+        color: #999;
+    }
+
+    tr td {
+        background-color: #252525;
+    }
+
+    #disclaimer {
+        color: #999;
+    }
+
+    #disclaimer a {
+        color: #999;
+    }
+
+    footer {
+        background-color: #151515;
+        color: #FFF;
+    }
+    
+    footer svg {
+        color: #fff;
+    }
+
+    footer svg:hover {
+        color: #ccc;
     }
 }
-*/
 
-body {
-    background-color: #FFF;
-    color: #000;
-}
+/* end color themes */
 
 * {
     box-sizing: border-box;
@@ -30,8 +141,6 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #e5e5e5;
-    color: #000;
     height: 64px;
     position: sticky;
     top: 0;
@@ -55,8 +164,6 @@ header h1 {
 .badge {
     font-size: 10px;
     font-weight: 500;
-    background-color: white;
-    border: 2px solid rgb(175, 175, 175);
     padding: 4px;
     border-radius: 8px;
     margin-left: 12px;
@@ -68,7 +175,6 @@ header h1 {
 .version {
     font-size: 10px;
     font-weight: 300;
-    color: #000;
     margin-left: 8px;
 }
 
@@ -93,9 +199,7 @@ section h2 {
 }
 
 .card {
-    background-color: white;
     border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     cursor: pointer;
     padding: 16px;
     width: 32%;
@@ -117,7 +221,6 @@ section h2 {
 
 .card p {
     font-size: 14px;
-    color: #666666;
 }
 
 .card:hover {
@@ -153,7 +256,6 @@ tr {
 
 tr td {
   padding: 10px 20px;
-  background-color: #f5f5f5;
 }
 
 tr td:first-of-type {
@@ -172,19 +274,10 @@ table td:first-child {
 
 #disclaimer {
     font-size: 12px;
-    color: #999999;
 }
 
 #disclaimer u {
     text-decoration: underline;
-}
-
-#disclaimer a {
-    color: #999999;
-}
-
-#disclaimer a:hover {
-    color: #666666;
 }
 
 #disclaimer p {
@@ -195,9 +288,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #EEE;
-    color: #000;
-    height: 64px;
+    height: 48px;
     padding: 8px;
 }
 
@@ -207,12 +298,10 @@ footer p {
 }
 
 footer svg {
-    color: #000;
+    margin-right: 4px;
     cursor: pointer;
-    height: 24px;
-    width: 24px;
-}
-
-footer svg:hover {
-    color: #fff;
+    height: 16px;
+    width: 16px;
+    transition: 0.2s;
+    transition-timing-function: ease;
 }
