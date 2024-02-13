@@ -129,7 +129,50 @@
     }
 }
 
-/* end color themes */
+/* device-specific */
+
+@media screen and (max-width: 500px) {
+    .card {
+      background-image: none !important;
+    }
+
+    #resources .card {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .card p {
+        display: none !important;
+    }
+
+    header {
+        height: 42px !important;
+    }
+
+    header h1 {
+        font-size: 28px !important;
+    }
+    
+    header img {
+        height: 32px !important;
+        width: 32px !important;
+        margin: 8px !important;
+    }
+    
+    .badge {
+        font-size: 8px !important;
+    }
+    
+    .version {
+        font-size: 8px !important;
+    }
+
+    table td {
+        max-width: 1px;
+    }
+}
+
+/* begin normal css */
 
 * {
     box-sizing: border-box;
@@ -145,6 +188,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    white-space: nowrap;
 }
 
 header img {
@@ -196,6 +240,7 @@ section h2 {
 .card-container {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 16px;
 }
 
 .card {
@@ -211,7 +256,8 @@ section h2 {
 }
 
 #resources .card {
-    width: 49%;
+    width: 600px;
+    margin: 0 auto;
 }
 
 .card h3 {
@@ -237,6 +283,18 @@ section h2 {
 
 #card-github:hover {
     background-image: url(assets/gif-3.webp);
+}
+
+#card-gamemanual:hover {
+    background-image: url(assets/gif-4.webp);
+}
+
+#card-buildlog:hover {
+    background-image: url(assets/gif-5.webp);
+}
+
+#card-linktree:hover {
+    background-image: url(assets/gif-6.webp);
 }
 
 #card-hours:hover {
@@ -280,7 +338,7 @@ table td:first-child {
     text-decoration: underline;
 }
 
-#disclaimer p {
+#disclaimer p, h4 {
     padding: 4px;
 }
 

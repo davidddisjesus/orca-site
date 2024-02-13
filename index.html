@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORCAHub</title>
+    <title>ORCA Hub | Home</title>
     <link rel="stylesheet" href="styles.css">
-    <meta content="ORCA Hub is an extensive resource page for members of the Official Robot Constructors of Ashland, VA. Find important documents, meeting hours, and more." property="og:description" />
     <meta name="description" content="ORCA Hub is an extensive resource page for members of the Official Robot Constructors of Ashland, VA. Find important documents, meeting hours, and more.">
     <meta property="og:title" content="ORCA Hub | Home">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://orca3136.pages.dev/">
     <meta property="og:image" content="https://orca3136.pages.dev/assets/cover.png">
-    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image:alt" content="A picture by photographer Zach Clarke of ORCA 3136 Rumble In The Roads 2023 with text that reads ORCAHub Home.">
     <link rel="icon" href="assets/favicon.ico" sizes="any">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="manifest" href="assets/site.webmanifest">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e5e5e5" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1a1a" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
     <script src="assets/img.js"></script>
     <script src="script.js"></script>
 </head>
@@ -26,7 +24,7 @@
         <img src="assets/logo.png" alt="ORCA 3136">
         <h1>ORCA Hub</h1>
         <span class="badge" title="This is a beta project developed by David Waldrop. Contribute or donate if possible!&#013;&#013;Clicking this badge will open the GitHub repository of this website." onclick="openURL('https://github.com/davidddisjesus/orca-site/')">✨ Beta</span>
-        <span class="version">v0.2.1</span>
+        <span class="version">v0.3.0</span>
     </header>
     <main>
         <section id="links">
@@ -45,6 +43,21 @@
                     <p>View the official ORCA 3136 repository.</p>
                 </div>
             </div>
+
+            <div class="card-container">
+                <div class="card" id="card-gamemanual" onclick="openURL('https://firstfrc.blob.core.windows.net/frc2024/Manual/2024GameManual.pdf')">
+                    <h3>Game Manual</h3>
+                    <p>The latest 2024 Game Manual.</p>
+                </div>
+                <div class="card" id="card-buildlog" onclick="openURL('https://www.chiefdelphi.com/t/frc-3136-o-r-c-a-2024-open-alliance-build-log/448306')">
+                    <h3>Build Log</h3>
+                    <p>Read the latest 3136 build log.</p>
+                </div>
+                <div class="card" id="card-linktree" onclick="openURL('https://linktr.ee/orca3136')">
+                    <h3>Other</h3>
+                    <p>Other resources not covered here.</p>
+                </div>
+            </div>
         </section>
         <section id="resources">
             <h2>Resources</h2>
@@ -52,6 +65,8 @@
                 <div class="card" id="card-hours">
                     <h3>Robotics Hours</h3>
                     <table>
+                        <col style="width: 35%;">
+                        <col style="width: 100%;">
                         <tr>
                             <td>Sunday</td>
                             <td>11:00 AM - 6:00 PM</td>
@@ -81,18 +96,14 @@
                             <td>10:00 AM - 8:00 PM</td>
                         </tr>
                     </table>
-                    
-                </div>
-                <div class="card" id="card-gamemanual" onclick="openURL('https://cdn.discordapp.com/attachments/1063270135076495413/1203047228273594388/2024GameManual.pdf')">
-                    <h3>Game Manual</h3>
-                    <p>The latest 2024 Game Manual.</p>
                 </div>
             </div>
         </section>
         <section id="disclaimer">
-            <p>This ORCA Resources site is updated <i>manually</i> by myself every afternoon. As such, some of the resources on this site may not be entirely accurate or up-to-date. For the latest resources, please check the <a href="https://discord.gg/wRhaXbfwET">ORCA 3136 Discord</a>.</p>
+            <h4>Disclaimer</h4>
+            <p>This ORCA Resources site is updated <i>manually</i> on a regular basis. As such, some of the resources on this site may not be entirely accurate or up-to-date. For the latest resources, please check the ORCA 3136 Discord.</p>
             <p>This website is licensed under the GNU General Public License v3.0. Learn more <a href=https://www.gnu.org/licenses/gpl-3.0.en.html>here.</a></p>
-            <p>Some gifs are used by permission from giphy.com. All rights reserved.</p>
+            <p>Some GIFs are used by permission from giphy.com. All rights reserved.</p>
         </section>
     </main>
     <footer>

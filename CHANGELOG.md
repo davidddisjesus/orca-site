@@ -1,5 +1,14 @@
-## `v0.2.1`
-**`fix:`** Incorrect meta
+
+
+
+## `v0.3.0`
+**`feat:`** Page size detection
+<br>
+**`refactor:`** Meet schedule size detection
+<br>
+**`feat:`** Multiple row links
+<br>
+**`refactor:`** Disclaimer refactor
 
 
 
