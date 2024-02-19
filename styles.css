@@ -131,9 +131,24 @@
 
 /* device-specific */
 
+/* mobile */
 @media screen and (max-width: 500px) {
     .card {
-      background-image: none !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        transform: none !important;
+    }
+
+    .card h3 {
+        margin-bottom: 0 !important;
+        font-size: 16px !important;
+    }
+
+    #links .card {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
     }
 
     #resources .card {
@@ -169,6 +184,40 @@
 
     table td {
         max-width: 1px;
+    }
+
+    section h2 {
+        text-align: center;
+    }
+
+    section h2::before {
+        content: "· ";
+    }
+
+    section h2::after {
+        content: " ·";
+    }
+
+    #card-hours h3 {
+        text-align: center !important;
+    }
+
+    #chromebook {
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+        
+    figcaption {
+        width: auto !important;
+    }
+
+    #disclaimer h4 {
+        text-align: center !important;
+    }
+
+    #disclaimer p {
+        text-align: center !important;
     }
 }
 
@@ -313,17 +362,17 @@ tr {
 }
 
 tr td {
-  padding: 10px 20px;
+    padding: 10px 20px;
 }
 
 tr td:first-of-type {
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
 tr td:last-of-type {
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 table td:first-child {
@@ -362,4 +411,18 @@ footer svg {
     width: 16px;
     transition: 0.2s;
     transition-timing-function: ease;
+}
+
+.qr-container {
+    padding-block: 6px;
+}
+
+object {
+    border-radius: 24px;
+}
+    
+figcaption {
+    font-size: 14px;
+    width: 200px;
+    text-align: center;
 }

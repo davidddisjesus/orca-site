@@ -1,6 +1,15 @@
 
 
 
+## `v0.3.1`
+**`feat:`** Add Chromebook access
+<br>
+**`refactor:`** Mobile layout refactor
+<br>
+**`chore:`** Meeting schedule update
+
+
+
 ## `v0.3.0`
 **`feat:`** Page size detection
 <br>
