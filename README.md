@@ -8,4 +8,4 @@ Thank you to the very few supporters of this project. It was fun while it lasted
 ## ORCA Hub
 ### February 8th, 2024 &mdash; March 13th, 2024
 
-[View Archived Changelog](https://github.com/davidddisjesus/orca-site/blob/main/CHANGELOG.md)
+[View Archived Versions](https://github.com/davidddisjesus/orca-site/blob/main/CHANGELOG.md)
